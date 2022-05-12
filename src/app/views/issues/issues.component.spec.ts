@@ -22,4 +22,13 @@ describe('IssuesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show the issues', () => {
+    expect(component.issues).toBeTruthy()
+  })
+
+  it('issues should be an object', () => {
+    expect(typeof(component.issues)).toBe('object')
+  })
+
 });
