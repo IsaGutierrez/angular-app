@@ -1,0 +1,36 @@
+@import '../../../variables.scss';
+
+.Issues {
+    padding: 30px;
+}
+
+.issues-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.issue-details {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-blue;
+}
+
+a:hover {
+    color: $light-blue;
+}
+
+@media (max-width: 530px) {
+    .issues-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+    }
+    
+}

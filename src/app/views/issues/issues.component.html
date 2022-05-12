@@ -1,0 +1,11 @@
+<div class="Issues">
+    <h3>Open Angular Issues:</h3>
+
+    <div class="issues-div">
+        <div *ngFor="let issue of issues" class="mt-4 issue-details">
+            <a href="https://github.com/angular/angular/issues/{{issue['number']}}" target="_blank"><h5>Issue no.: {{issue['number']}}</h5></a>
+            <p>{{issue['title']}}</p>
+        </div>
+    </div>
+</div>
+
